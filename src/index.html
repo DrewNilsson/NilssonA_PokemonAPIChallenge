@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="body">
+    <div class="title-bar">
+        <h1 class="title">Pokédex</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="poke-name-outer">
+                <div class="poke-name-inner">
+                    <div id="pokeName" class="poke-name-text"></div>
+                </div>
+            </div>
+            <div id="pokemonImg" class="pokemon-images"></div>
+            <div class="evolution">
+                <div class="evolution-header">Evolution Path</div>
+                <div id="evolutionDiv" class="evolution-div"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="list-outer">
+                <div class="list-btns-row">
+                    <div id="pokemonBtn" class="list-btn-outer">
+                        <div class="list-btn-inner">
+                            <div class="list-btn-text">Pokémon</div>
+                        </div>
+                    </div>
+                    <div id="abilitiesBtn" class="list-btn-outer">
+                        <div class="list-btn-inner">
+                            <div class="list-btn-text">Abilities</div>
+                        </div>
+                    </div>
+                    <div id="movesBtn" class="list-btn-outer">
+                        <div class="list-btn-inner">
+                            <div class="list-btn-text">Moves</div>
+                        </div>
+                    </div>
+                    <div id="locationsBtn" class="list-btn-outer">
+                        <div class="list-btn-inner">
+                            <div class="list-btn-text">Locations</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="list-content-div">
+                        <div id="listContent" class="list-content-inject"></div>
+                        <input id="pokemonSearch" class="pokemon-search" type="text" placeholder="Search...">
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+<script src="./scripts/app.js" type="module"></script>
+</html>
